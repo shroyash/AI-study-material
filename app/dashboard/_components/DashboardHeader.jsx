@@ -1,10 +1,18 @@
+import { UserButton } from '@clerk/nextjs'
 import React from 'react'
+import Welcome from './Welcome'
+
 
 function DashboardHeader() {
   return (
-    <div>
-        <h2>DashboardHeader</h2>
-      
+    <div className='navbarDashboar'>
+     <div className="flex justify-end p-6 ">
+<UserButton/>
+</div>
+<Welcome/>
+
+
+
     </div>
   )
 }
